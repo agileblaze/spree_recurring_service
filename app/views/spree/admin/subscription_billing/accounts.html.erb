@@ -1,0 +1,27 @@
+<h3>User Account Info</h3>
+</br></br>
+<ul class="account_info">
+<% Recurly::Account.find_each do |account| %>
+<li>
+  <b>Name:</b><%= account.first_name %>&nbsp;<%= account.last_name %></br>
+  <b>Email:</b><%= account.email %></br>
+  <b>Company Name:</b><%=account.company_name%></br>
+  <b>Status:</b><%= account.state%>
+  <%#= account%></br>
+  <% unless  account.billing_info.nil? %>
+   <h6>Billing info</h6>
+   <b>Address: </b><%= account.billing_info['address1'] %><%= account.billing_info['address2'] %></br>
+   <b>Card Type: </b><%= account.billing_info['card_type'] %></br>
+   <b>City:</b><%= account.billing_info['city'] %></br>
+   <b>Phone No:</b><%= account.billing_info['phone'] %></br>
+   </br></br>
+
+  <% end %>
+</li>
+<% end %>
+</ul>
+
+
+
+
+

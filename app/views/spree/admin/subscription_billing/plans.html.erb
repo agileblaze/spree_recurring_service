@@ -1,0 +1,15 @@
+<h3>Plans </h3>
+</br>
+<%= link_to 'Create Plan', :action=>'new_plan'%>
+<ul class="account_info">
+<% Recurly::Plan.find_each do |plan| %>
+</br></br>
+ <li>
+   <b>Name:</b><%=plan.name %></br>
+   <b>Plan Code:</b><%=plan.plan_code %></br>
+   <b> Description:</b><%=plan.description %></br>
+   <b>Plan Period:</b><%=plan.plan_interval_length %>&nbsp;<%=plan.plan_interval_unit %></br>
+  <%#= plan%>
+  </li>
+<% end %>
+<ul>

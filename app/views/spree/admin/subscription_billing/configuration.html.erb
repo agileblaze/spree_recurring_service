@@ -1,0 +1,7 @@
+
+Current Api key:- <%= @config.api_ky unless @config.nil? %> <%= 'Not set' if @config.nil? %>
+
+<%= form_for  @configuration,:url=>{:action=>'create_configuration'} do |f|%>
+   <%= f.label 'Api Key : '%><%= f.text_field 'api_ky' %>
+   <%= f.submit 'Add key'%>
+<% end %>

@@ -1,0 +1,2 @@
+class PromotedItemsController < ApplicationController
+end

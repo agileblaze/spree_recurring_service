@@ -1,0 +1,28 @@
+<!--   <link type="text/css" rel="stylesheet" href="http://static.ak.fbcdn.net/rsrc.php/v1/yN/r/2i9oGNpj3FX.css" />
+   <link type="text/css" rel="stylesheet" href="http://static.ak.fbcdn.net/rsrc.php/v1/yS/r/OFRKSeJZoXG.css" />
+-->
+<%#	= render :partial => 'spree/admin/shared/tab' %>
+<%# helper :all %>
+<%#= render :partial => 'spree/admin/shared/product_sub_menu' %>
+<%= stylesheet_link_tag 'style'%>
+ <div id="sub_nav1" data-hook="a111">
+ </div>
+<%#= render :partial =>'spree/admin/shared/tabs'%>
+<div id='container'>
+<h1>Spree Admin SubscriptionBilling</h1>
+<%= flash['msg'] unless flash['msg'].nil? %>
+<div id='cont-link' >
+<ul class="admin_tabs">
+<li> <%= link_to 'Accounts',:action=>'accounts'%></li>
+<li> <%= link_to 'Plans', :action =>'plans' %></li>
+<li> <%= link_to 'Subscriptions', :action =>'subscriptions' %></li>
+<li> <%= link_to 'Cofiguration', :action =>'configuration' %></li>
+</ul>
+</div>
+</br>
+
+<%= yield %>
+
+</div>
+
+

@@ -1,0 +1,14 @@
+<h3>Subscription </h3>
+</br></br>
+<ul class="account_info">
+<% Recurly::Subscription.find_each do |sub| %>
+<li>
+   <b>Activate At:</b><%=sub.activated_at %></br>
+   <b>Current Period Started At:</b><%=sub.current_period_started_at %></br>
+   <b> Current Period Ends At:</b><%=sub.current_period_ends_at %></br>
+   <b> State:</b><%= sub.state %></br>
+   <b>Amount($):</b><%=sub.unit_amount_in_cents.to_i/100%></br>
+  <%#= plan%>
+  </li>
+<% end %>
+</ul>

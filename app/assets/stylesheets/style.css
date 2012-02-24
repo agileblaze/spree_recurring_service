@@ -1,0 +1,42 @@
+#container{
+font-family: "Helvetica Neue",Helvetica,Tahoma,Verdana,Arial,sans-serif;
+   margin: 20px auto 0;
+   border: 2px solid #CCC;
+   text-align: center;
+   min-height: 600px;
+   bottom:10%;
+}
+
+ul.admin_tabs li {
+    background: url("http://localhost:3001/assets/admin/bg/admin_tab_selected_back.png") repeat-x scroll left top #0095DA;
+    border-left: 1px solid #41A6F0;
+    border-right: 1px solid #4986BF;
+    border-top: 1px solid #41A6F0;
+    height: 40px;
+    margin-top: -2px;
+       border: 0 none;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    float:left;
+    list-style:none;
+}
+
+ul.admin_tabs li a {
+    color: #FFFFFF;
+    display: block;
+    outline: medium none;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+ul.admin_tabs li {
+    margin-bottom: -1px;
+    margin-right: 0;
+}
+.account_info {padding:0;}
+.account_info li{width:100%; list-style:none; text-align:left; border-bottom:1px solid #999; padding-left:40px; color:#444;}
