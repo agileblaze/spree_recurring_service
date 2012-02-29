@@ -1,20 +1,10 @@
 SpreeRecurringService
 =====================
 
-Introduction goes here.
+Install it by adding gem 'spree_recurring_service' to the Gemfile.
+Execute bundle install command.
+Run command rake db:migrate
 
 
-Example
-=======
-
-Example goes here.
-
-Testing
--------
-
-Be sure to add the rspec-rails gem to your Gemfile and then create a dummy test app for the specs to run against.
-
-    $ bundle exec rake test app
-    $ bundle exec rspec spec
 
 Copyright (c) 2012 [name of extension creator], released under the New BSD License
