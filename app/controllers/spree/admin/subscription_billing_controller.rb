@@ -5,7 +5,7 @@ class Spree::Admin::SubscriptionBillingController < Spree::BaseController #Appli
   before_filter :load_api,:except=>['configuration','create_configuration']
 
   def index
-    #Recurly.api_key = '78256c8e627a4a829f5e3948f30012a2'
+    #Recurly.api_key = 'Specify your key '
   end
 
   def accounts
@@ -13,14 +13,7 @@ class Spree::Admin::SubscriptionBillingController < Spree::BaseController #Appli
   end
 
   def plans
-=begin
-    auth= %x[curl  -u #{Confiuration.first.api_ky}: https://api.recurly.com/v2/accounts] 
-    if auth=="HTTP Basic: Access denied.\n"
-      #Confiuration.delete_all
-      render :text =>'abc' and return
-    end 
-    render :text =>auth and return
-=end
+
   end
 
   def subscriptions
